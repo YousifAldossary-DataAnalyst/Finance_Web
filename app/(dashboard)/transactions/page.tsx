@@ -18,6 +18,7 @@ import { toast } from "sonner";
 import { transactions as transactionSchema } from "@/db/schema";
 import { useSelectAccount } from "@/features/accounts/hooks/use-select-account";
 import { useBulkCreateTransactions } from "@/features/transactions/api/use-bulk-create-transactions";
+import Filters from "@/components/global/filter";
 
 enum VARIANTS {
   LIST = "LIST",
@@ -100,6 +101,7 @@ const TransactionsPage = () => {
 
   return (
     <div className="max-w-screen-2xll mx-auto w-full pb-10">
+      <Filters />
       <Card className="border-none drop-shadow-sm ">
         <CardHeader className="gap-y-2 lg:flex-row lg:items-center lg:justify-between">
           <CardTitle className="text-xl line-clamp-1">

@@ -52,7 +52,7 @@ const AccountFilter = () => {
       onValueChange={onChange}
       disabled={isLoadingSummary || isLoadingAccounts}
     >
-      <SelectTrigger className="lg:w-auto w-full h-9 rounded-md px-3 mb-2 font-normal bg-primary/10 hover:bg-primary/20 hover:text-primary focus:ring-offset-0 focus-ring-transparent outline-none text-primary/80 focus:bg-primary/20 transition">
+      <SelectTrigger className="lg:w-auto w-full h-9 rounded-md px-3 mt-2 font-normal bg-primary/10 hover:bg-primary/20 hover:text-primary focus:ring-offset-0 focus-ring-transparent outline-none text-primary/80 focus:bg-primary/20 transition">
         <SelectValue placeholder="Select account" />
       </SelectTrigger>
       <SelectContent>
