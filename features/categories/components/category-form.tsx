@@ -22,7 +22,7 @@ const formSchema = insertCategoriesSchema.pick({
 type FromValues = z.input<typeof formSchema>;
 
 type Props = {
-  id: string;
+  id?: string;
   defaultValues: FromValues;
   onSumbit: (values: FromValues) => void;
   onDelete?: () => void;

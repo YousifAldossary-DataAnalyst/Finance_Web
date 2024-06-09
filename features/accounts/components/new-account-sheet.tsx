@@ -6,10 +6,10 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useNewAccount } from "@/features/accounts/hooks/use-new-account";
-import { AccountForm } from "./account-form";
 import { insertAccountSchema } from "@/db/schema";
 import { z } from "zod";
 import { useCreateAccount } from "../api/use-create-account";
+import { AccountForm } from "./account-form";
 
 const formSchema = insertAccountSchema.pick({
   name: true,
@@ -37,6 +37,7 @@ export const NewAccountSheet = () => {
           </SheetDescription>
         </SheetHeader>
         <AccountForm
+          id=""
           defaultValues={{ name: "" }}
           onSumbit={onSumbit}
           disabled={mutation.isPending}

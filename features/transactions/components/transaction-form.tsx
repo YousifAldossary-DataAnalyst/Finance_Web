@@ -37,8 +37,8 @@ type FromValues = z.input<typeof formSchema>;
 type ApiFormValues = z.input<typeof apiSchema>;
 
 type Props = {
-  id: string;
-  defaultValues: FromValues;
+  id?: string;
+  defaultValues?: FromValues;
   onSumbit: (values: ApiFormValues) => void;
   onDelete?: () => void;
   disabled?: boolean;

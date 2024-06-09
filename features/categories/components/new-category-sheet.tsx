@@ -37,6 +37,7 @@ export const NewCategorySheet = () => {
           </SheetDescription>
         </SheetHeader>
         <CategoryForm
+          id=""
           defaultValues={{ name: "" }}
           onSumbit={onSumbit}
           disabled={mutation.isPending}
