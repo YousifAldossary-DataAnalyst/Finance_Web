@@ -100,7 +100,7 @@ export const columns: ColumnDef<ResponseType>[] = [
       );
     },
     cell: ({ row }) => {
-      return <span>{row.original.categoryName}</span>;
+      return <span>{row.original.payee}</span>;
     },
   },
 
