@@ -20,7 +20,7 @@ export function formatCurrency(value: number) {
   return Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "SAR",
-    minimumFractionDigits: 4,
+    minimumFractionDigits: 2,
   }).format(value);
 }
 
